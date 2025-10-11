@@ -1,0 +1,14 @@
+# Copyright (c) 2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+config SHIELD_dgrim_DONGLE
+    def_bool $(shields_list_contains,dgrim_dongle)
+
+config SHIELD_dgrim_LEFT
+    def_bool $(shields_list_contains,dgrim_left)
+
+config SHIELD_dgrim_RIGHT
+    def_bool $(shields_list_contains,dgrim_right)
+
+config SHIELD_dgrim_PAD
+    def_bool $(shields_list_contains,dgrim_pad)
