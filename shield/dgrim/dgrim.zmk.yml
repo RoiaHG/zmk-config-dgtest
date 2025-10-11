@@ -1,0 +1,13 @@
+file_format: "1"
+id: dgrim
+name: dgrim
+type: shield
+url: https://github.com/RoiaHG/zmk-donfig-dgtest
+requires: [pro_micro]
+features:
+  - keys
+siblings:
+  - dgrim_dongle
+  - dgrim_left
+  - dgrim_right
+  - dgrim_pad
