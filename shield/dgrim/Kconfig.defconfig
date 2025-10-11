@@ -1,0 +1,34 @@
+## for dongle (left => dongle)
+if SHIELD_dgrim_DONGLE        
+
+config ZMK_KEYBOARD_NAME
+    default "dgrim"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+  
+# for dongle
+config ZMK_USB        
+    default y
+
+endif
+  
+## for dongle (add dongle and etc)
+if SHIELD_dgrim_DONGLE || SHIELD_dgrim_LEFT || SHIELD_dgrim_RIGHT || SHIELD_dgrim_PAD    
+
+config ZMK_SPLIT
+    default y
+  
+# for dongle
+config ZMK_BLE    
+    default y
+
+if ZMK_DISPLAY
+
+config I2C
+    default y
+
+config SSD1306
+    default y
+
+endif # ZMK_DISPLAY
